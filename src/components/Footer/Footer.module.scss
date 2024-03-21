@@ -1,0 +1,76 @@
+.footer {
+    margin-top: auto;
+}
+
+.wrap {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 32px 28px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px 0 #00000010;
+
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+.navColumns {
+    display: flex;
+    gap: 170px;
+
+    @media screen and (max-width: 991px) {
+        gap: 40px;
+    }
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+
+    }
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navLink {
+    font-size: 17px;
+    color: #000000;
+    text-decoration: none;
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    align-self: flex-start;
+}
+
+.contact {
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            svg path {
+                fill: gray;
+            }
+        }
+    }
+
+
+    svg path {
+        transition: fill 100ms;
+    }
+}
+
+.switcher {
+    margin-top: auto
+}

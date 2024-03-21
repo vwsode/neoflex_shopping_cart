@@ -1,0 +1,22 @@
+.switcher {
+    display: flex;
+    gap: 18px;
+}
+
+.languages {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.switch {
+    color: #101010;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: transparent;
+
+    &.switchActive {
+        font-weight: 700;
+        color: #FFA542;
+    }
+}

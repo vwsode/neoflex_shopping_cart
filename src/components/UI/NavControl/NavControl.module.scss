@@ -1,0 +1,47 @@
+.control {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            svg path {
+                fill: #3e3e3e;
+            }
+        }
+    }
+
+    svg path {
+        transition: fill 100ms;
+    }
+
+    &.active {
+        svg path {
+            fill: rgb(255, 0, 0);
+        }
+    }
+}
+
+.badge {
+    position: absolute;
+    font-weight: 500;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 0 3px;
+    background-color: #FFA542;
+    border-radius: 50%;
+    min-width: 18px;
+    min-height: 18px;
+
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

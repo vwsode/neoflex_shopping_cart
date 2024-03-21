@@ -1,0 +1,49 @@
+.summary {
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 #00000010;
+    position: relative;
+    height: 120px;
+    min-width: 350px;
+    background-color: #ffffff;
+}
+
+.param {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paramTitle,
+.paramValue {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.paramValue {}
+
+.btnConfirm {
+    height: 65px;
+    background-color: #101010;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 #00000025;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    transition: transform 200ms;
+
+    &:active {
+        transform: scale(0.93);
+    }
+}
